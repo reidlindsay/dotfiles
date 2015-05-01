@@ -69,6 +69,9 @@ func! RemoveTrailingWhitespace()
 endfunc
 autocmd BufWrite *.py :call RemoveTrailingWhitespace()
 
+call pathogen#infect()
+call pathogen#helptags()
+
 
 " vimrc file for following the coding standards specified in PEP 7 & 8.
 "
